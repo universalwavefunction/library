@@ -5,3 +5,15 @@ ul {
   padding: 20px;
   margin-left: 20px;
 }
+
+#exit {
+  width: 10%;
+  background-color: white;
+  border: none;
+  color: red;
+  font-size: 12px;
+}
+
+#exit:hover {
+  background: lightgrey;
+}
