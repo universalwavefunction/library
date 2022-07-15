@@ -7,7 +7,12 @@
     <script src="javascript.js" defer></script>
   </head>
   <body>
-    <form class="" action="index.html" method="post">
+    <div class="header">
+      <h1>Library</h1>
+      <a href="#">Log in</a>
+    </div>
+    <div class="body">
+      <form class="addbook" action="index.html" method="post">
       <h2>Submit a new book: </h2>
       <label for="title">Title</label>
       <input type="text" name="title" id="title" required><br>
@@ -16,10 +21,13 @@
       <label for="pages">Pages</label>
       <input type="text" name="pages" id="pages" required><br>
       <label for="read">Read</label>
-      <input type="checkbox" name="read" id="read"><br>
+      <input type="checkbox" name="read" value="yes" id="read"><br>
       <input type="button" value="Add book" id="submit" onclick="addBook()">
-    </form>
-    <h1>Books:</h1>
-    <div id="books"></div>
+      </form>
+      <div class="left">
+        <h1>Books:</h1>
+        <div id="books"></div>
+      </div>
+    </div>
   </body>
 </html>
