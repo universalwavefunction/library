@@ -103,5 +103,4 @@ function removeBook() {
 
 //To Solve:
 //make book cards the same size (change from list items to divs?), make read checkbox start at left edge,
-//make read toggle switch
-//make log in button align properly, make first letters auto caps
+//make first letters auto caps
