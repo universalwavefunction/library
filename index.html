@@ -9,7 +9,10 @@
   <body>
     <div class="header">
       <h1>Library</h1>
-      <a href="#">Log in</a>
+      <div class="header-right">
+        <li><a href="#">Log in</a></li>
+        <li><a href="#">Create Account</a></li>
+      </div>
     </div>
     <div class="body">
       <form class="addbook" action="index.html" method="post">
@@ -24,10 +27,11 @@
       <input type="checkbox" name="read" value="yes" id="read"><br>
       <input type="button" value="Add book" id="submit" onclick="addBook()">
       </form>
-      <div class="left">
+      <div class="right">
         <h1>Books:</h1>
         <div id="books"></div>
       </div>
     </div>
+    <footer>∞made by helan∞</footer>
   </body>
 </html>
