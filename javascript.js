@@ -21,16 +21,14 @@ function addBook() {
   if (newBook.read == true) {
     book_display.innerHTML += "<ul>" + "<h2>" + "Title: " + newBook.title + "</h2>"
     + "<li>" + "Author: " + newBook.author + "</li>" + "<li>" + "Pages: " +
-    newBook.pages + "</li>" + "<li>" + "Read: " + newBook.read + "</li>" +
-    "<button id='exit'>" + 'x' + "</button>" + "Read: " +
-    "<input type='checkbox' value='yes' id='toggle' checked>" + "</ul>"
+    newBook.pages + "</li>" + "<li>" + "Read: " + "<input type='checkbox' value='yes' id='toggle' checked>"
+    + "</li>" + "<button id='exit'>" + 'x' + "</button>" + "</ul>"
   }
   else {
-      book_display.innerHTML += "<ul>" + "<h2>" + "Title: " + newBook.title + "</h2>"
-      + "<li>" + "Author: " + newBook.author + "</li>" + "<li>" + "Pages: " +
-      newBook.pages + "</li>" + "<li>" + "Read: " + newBook.read + "</li>" +
-      "<button id='exit'>" + 'x' + "</button>" + "Read: " +
-      "<input type='checkbox' value='yes' id='toggle'>" + "</ul>"
+    book_display.innerHTML += "<ul>" + "<h2>" + "Title: " + newBook.title + "</h2>"
+    + "<li>" + "Author: " + newBook.author + "</li>" + "<li>" + "Pages: " +
+    newBook.pages + "</li>" + "<li>" + "Read: " + "<input type='checkbox' value='yes' id='toggle'>"
+    + "</li>" + "<button id='exit'>" + 'x' + "</button>" + "</ul>"
   }
   removeBook()
   toggleRead()
@@ -51,18 +49,16 @@ function toggleRead() {
         if (myLibrary[i].read == true) {
           book_display.innerHTML += "<ul>" + "<h2>" + "Title: " + myLibrary[i].title + "</h2>"
           + "<li>" + "Author: " + myLibrary[i].author + "</li>" + "<li>" + "Pages: " +
-          myLibrary[i].pages + "</li>" + "<li>" + "Read: " + myLibrary[i].read + "</li>" +
-          "<button id='exit'>" + 'x' + "</button>" + "Read: " +
-          "<input type='checkbox' value='yes' id='toggle' checked>" + "</ul>"
+          myLibrary[i].pages + "</li>" + "<li>" + "Read: " + "<input type='checkbox' value='yes' id='toggle' checked>"
+          + "</li>" + "<button id='exit'>" + 'x' + "</button>" + "</ul>"
           toggleRead()
           removeBook()
         }
         else {
           book_display.innerHTML += "<ul>" + "<h2>" + "Title: " + myLibrary[i].title + "</h2>"
           + "<li>" + "Author: " + myLibrary[i].author + "</li>" + "<li>" + "Pages: " +
-          myLibrary[i].pages + "</li>" + "<li>" + "Read: " + myLibrary[i].read + "</li>" +
-          "<button id='exit'>" + 'x' + "</button>" + "Read: " +
-          "<input type='checkbox' value='yes' id='toggle'>" + "</ul>"
+          myLibrary[i].pages + "</li>" + "<li>" + "Read: " + "<input type='checkbox' value='yes' id='toggle'>"
+          + "</li>" + "<button id='exit'>" + 'x' + "</button>" + "</ul>"
           toggleRead()
           removeBook()
         }
@@ -81,18 +77,16 @@ function removeBook() {
         if (myLibrary[i].read == true) {
           book_display.innerHTML += "<ul>" + "<h2>" + "Title: " + myLibrary[i].title + "</h2>"
           + "<li>" + "Author: " + myLibrary[i].author + "</li>" + "<li>" + "Pages: " +
-          myLibrary[i].pages + "</li>" + "<li>" + "Read: " + myLibrary[i].read + "</li>" +
-          "<button id='exit'>" + 'x' + "</button>" + "Read: " +
-          "<input type='checkbox' value='yes' id='toggle' checked>" + "</ul>"
+          myLibrary[i].pages + "</li>" + "<li>" + "Read: " + "<input type='checkbox' value='yes' id='toggle' checked>"
+          + "</li>" + "<button id='exit'>" + 'x' + "</button>" + "</ul>"
           toggleRead()
           removeBook()
         }
         else {
           book_display.innerHTML += "<ul>" + "<h2>" + "Title: " + myLibrary[i].title + "</h2>"
           + "<li>" + "Author: " + myLibrary[i].author + "</li>" + "<li>" + "Pages: " +
-          myLibrary[i].pages + "</li>" + "<li>" + "Read: " + myLibrary[i].read + "</li>" +
-          "<button id='exit'>" + 'x' + "</button>" + "Read: " +
-          "<input type='checkbox' value='yes' id='toggle'>" + "</ul>"
+          myLibrary[i].pages + "</li>" + "<li>" + "Read: " + "<input type='checkbox' value='yes' id='toggle'>" 
+          + "</li>" + "<button id='exit'>" + 'x' + "</button>" + "</ul>"
           toggleRead()
           removeBook()
         }
