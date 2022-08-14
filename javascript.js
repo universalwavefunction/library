@@ -25,7 +25,6 @@ const library = () => {
     bookInfo.push(newBook.display);
 
     bookDisplay();
-    removeBook();
     toggleRead();
     }
 
