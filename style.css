@@ -1,12 +1,23 @@
 .book-container {
+  width: 180px;
   list-style: none;
-  display: inline-grid;
+  display: flex;
+  flex-direction: column;
   border: 4px solid lightblue;
   background-color: #f5faff;
   border-radius: 4px;
   padding: 20px;
   margin: 20px;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h2, p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
 }
 
 p, li {
@@ -46,6 +57,10 @@ body {
   background-color: #F5F5F5;
 }
 
+#read {
+  text-align: left;
+}
+
 footer {
   display: block;
   padding: 4px;
@@ -59,7 +74,8 @@ footer {
   background: none;
   border: none;
   color: red;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bolder;
 }
 
 #exit:hover {
@@ -94,4 +110,9 @@ footer {
 
 h1 {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#books {
+  display: flex;
+  flex-flow: wrap;
 }
